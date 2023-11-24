@@ -1,7 +1,7 @@
 # ![Kelvin](https://user-images.githubusercontent.com/512174/37403613-b56e883a-278f-11e8-848c-5366515e920d.png)
 [![GitHub release](https://img.shields.io/github/release/stefanwichmann/kelvin.svg)](https://github.com/stefanwichmann/kelvin/releases)
 [![Github All Releases](https://img.shields.io/github/downloads/stefanwichmann/kelvin/total.svg)](https://github.com/stefanwichmann/kelvin/releases)
-[![Build Status](https://img.shields.io/github/workflow/status/stefanwichmann/kelvin/build)](https://github.com/stefanwichmann/kelvin/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/stefanwichmann/kelvin/build.yml?branch=master)](https://github.com/stefanwichmann/kelvin/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/stefanwichmann/kelvin)](https://goreportcard.com/report/github.com/stefanwichmann/kelvin)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/stefanwichmann/kelvin/blob/master/LICENSE)
 [![donate](https://img.shields.io/badge/donate-PayPal-yellow.svg)](https://paypal.me/stefanwichmann)
@@ -60,7 +60,7 @@ Got all these? Great, let's get started!
 # Installation
 1. Download the latest version of Kelvin from the [Releases](https://github.com/stefanwichmann/kelvin/releases) page.
 2. Extract the Kelvin archive.
-3. Start Kelvin by double-clicking `kelvin.exe` on windows or by typing `./kelvin` in your terminal on macOS, Linux and other Unix-based systems.
+3. Start Kelvin by double-clicking `kelvin.exe` on Windows or by typing `./kelvin` in your terminal on macOS, Linux and other Unix-based systems.
    You should see an output similar to the following snippet:
    ```
    2017/03/22 10:45:41 Kelvin v1.1.0 starting up... 🚀
@@ -185,11 +185,7 @@ Let's look at an example:
 - From now on Kelvin will only take control of the lights in the schedule `livingroom` if you activate the scene on the second tap.
 
 # Raspberry Pi
-A [Raspberry Pi](https://www.raspberrypi.org/) is the **perfect** device to run Kelvin on. It's cheap, it's small and it consumes very little energy. Recently the [Raspberry Pi Zero W](https://www.raspberrypi.org/products/pi-zero-w/) was released which makes your Kelvin hardware look like this (plus a power cord):
-
-![Raspberry Pi Zero W](https://www.raspberrypi.org/wp-content/uploads/2017/02/zero-wireless.png)
-
-But any other model of the Raspberry Pi will be sufficient. To set up Kelvin on a Raspberry Pi follow the installation guide [here](https://www.raspberrypi.org/documentation/installation/). Once your Pi is up and running (booting, connected to your network and the internet) just download the latest `linux-arm` release and follow the steps in [Installation](#installation).
+A [Raspberry Pi](https://www.raspberrypi.org/) is the **perfect** device to run Kelvin on. It's cheap, it's small and it consumes very little energy. Any model of the Raspberry Pi will be sufficient, but we don't provide binary releases for revision 1 and the first generation Raspberry Pi Zero anymore. To set up Kelvin on a Raspberry Pi follow the installation guide [here](https://www.raspberrypi.org/documentation/installation/). Once your Raspberry Pi is up and running (booting, connected to your network and the internet) download the latest `linux_armv7` release and follow the steps in [Installation](#installation).
 
 # Systemd setup on a RaspberryPi
 Running Kelvin as a systemd process provides an easily managed background process.
