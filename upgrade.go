@@ -29,7 +29,7 @@ import "time"
 import "fmt"
 import "os"
 
-const upgradeURL = "https://api.github.com/repos/stefanwichmann/kelvin/releases/latest"
+const upgradeURL = "https://api.github.com/repos/ryanhumps/kelvin/releases/latest"
 const updateCheckInterval = 12 * time.Hour
 
 // CheckForUpdate will get the latest release information of Kelvin
