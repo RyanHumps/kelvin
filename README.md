@@ -6,6 +6,32 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/stefanwichmann/kelvin/blob/master/LICENSE)
 [![donate](https://img.shields.io/badge/donate-PayPal-yellow.svg)](https://paypal.me/stefanwichmann)
 
+# Ryan Notes
+Values found from [reddit](https://www.reddit.com/r/Hue/comments/asx5dl/color_temperature_brightness_level_of_philips_hue/)
+```
+Assuming you're talking about the gen 3 A19 white and color ambiance bulb:
+
+Scene	Color temp (K)	Brightness (lumens)
+Relax	2237	~200*
+Read	2890	~570
+Concentrate	4291	~800
+Energize	6410	~550
+*The Relax scene is 56% brightness. Lumens calculated by multiplying brightness at 2000K (342 lm) by 0.56.
+
+
+
+And then for the gen 3 A19 white only bulb:
+
+Scene	Color temp (K)	Brightness (lumens)
+Bright	2700	840
+Dimmed	2700	~252**
+Nightlight	2700	~84***
+**Dimmed is 30% brightness. Lumens calculated by this formula: 840 x 0.30
+
+***Nightlight is 1% brightness, but there is no difference in brightness below 10%. Lumens calculated by this formula: 840 x 0.10
+```
+
+
 # Meet Kelvin
 Kelvin is a little helper bot who will automate the lights in your house. Its job is to adjust the color temperature and brightness in your home based on your local sunrise and sunset times and custom intervals defined by you. Think of it as [f.lux](https://justgetflux.com/) or Apple's Night Shift for your home.
 
