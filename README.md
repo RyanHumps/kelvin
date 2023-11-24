@@ -1,7 +1,7 @@
 # ![Kelvin](https://user-images.githubusercontent.com/512174/37403613-b56e883a-278f-11e8-848c-5366515e920d.png)
 
 # About
-This is a downstream fork of [stefanwichmann/kelvin](https://github.com/stefanwichmann/kelvin/) with the sole purpose of overriding the sunrise/set logic. The upstream's philosophy is to coordinate the light schedule based on sun position, where I prefer to keep a constant circadian light schedule based on my wake and sleep times, regardless of season.
+This is a downstream fork of [stefanwichmann/kelvin](https://github.com/stefanwichmann/kelvin/) with the sole purpose of overriding the sunrise/set logic. The upstream's philosophy is to coordinate the light schedule based on sun position (some background can be found in [this issue](https://github.com/stefanwichmann/kelvin/issues/44)), where I prefer to keep a constant circadian light schedule based on my wake and sleep times, regardless of season.
 
 A simple, lazy modification accomplishes this: the `astrotime` module that would normally calculate sunrise/set times is removed, and the `calculateSunrise` and `calculateSunset` functions always return `11:00` and `13:00` respectively. Now, the `defaultColorTemperature` and `defaultBrightness` configuration will only be active during that midday timespan, and the rest of the day can be freely customized using `beforeSunrise` and `afterSunset` schedules as normal.
 
