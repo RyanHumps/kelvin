@@ -30,7 +30,7 @@ import (
 
 	"time"
 
-	"github.com/btittelbach/astrotime"
+	//"github.com/btittelbach/astrotime"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -107,9 +107,11 @@ func (location *Geolocation) updateByIP() error {
 func CalculateSunset(date time.Time, latitude float64, longitude float64) time.Time {
 	// calculate start of day
 	yr, mth, day := date.Date()
-	startOfDay := time.Date(yr, mth, day, 0, 0, 0, 0, date.Location())
+	//startOfDay := time.Date(yr, mth, day, 0, 0, 0, 0, date.Location())
 
-	return astrotime.CalcDusk(startOfDay, latitude, longitude, astrotime.GOLDEN_HOUR)
+	//return astrotime.CalcDusk(startOfDay, latitude, longitude, astrotime.GOLDEN_HOUR)
+	
+	return time.Date(yr, mth, day, 13, 0, 0, 0, date.Location())
 }
 
 // CalculateSunrise calculates the sunrise for the given day based on
@@ -117,7 +119,8 @@ func CalculateSunset(date time.Time, latitude float64, longitude float64) time.T
 func CalculateSunrise(date time.Time, latitude float64, longitude float64) time.Time {
 	// calculate start of day
 	yr, mth, day := date.Date()
-	startOfDay := time.Date(yr, mth, day, 0, 0, 0, 0, date.Location())
+	//startOfDay := time.Date(yr, mth, day, 0, 0, 0, 0, date.Location())
 
-	return astrotime.CalcDawn(startOfDay, latitude, longitude, astrotime.GOLDEN_HOUR)
+	//return astrotime.CalcDawn(startOfDay, latitude, longitude, astrotime.GOLDEN_HOUR)
+	return time.Date(yr, mth, day, 11, 0, 0, 0, date.Location())
 }

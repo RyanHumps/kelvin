@@ -2,8 +2,6 @@ github.com/Masterminds/semver v1.5.0 h1:H65muMkzWKEuNDnfl9d70GUjFniHKHRbFPGBuZ3Q
 github.com/Masterminds/semver v1.5.0/go.mod h1:MB6lktGJrhw8PrUyiEoblNEGEQ+RzHPF078ddwwvV3Y=
 github.com/bt51/ntpclient v0.0.0-20140310165113-3045f71e2530 h1:2W1J2qL8feh1Av0KJq5cbBACg+lx6DfIm18vt45P+DA=
 github.com/bt51/ntpclient v0.0.0-20140310165113-3045f71e2530/go.mod h1:OahuhAz81f/KxpjyyO0H3rTNypHk3qd9s8BWriP7DAI=
-github.com/btittelbach/astrotime v0.0.0-20160515101311-7ddba43aa26e h1:yPRY9/vyatroUweN7ntWNO1JMJyIdyx+JnBOobhCkRI=
-github.com/btittelbach/astrotime v0.0.0-20160515101311-7ddba43aa26e/go.mod h1:jNKwDmwLM4+wENDkph85EVnlfuZ3o+MBtzFD8AiQK48=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=

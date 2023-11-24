@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/Masterminds/semver v1.5.0
 	github.com/bt51/ntpclient v0.0.0-20140310165113-3045f71e2530
-	github.com/btittelbach/astrotime v0.0.0-20160515101311-7ddba43aa26e
 	github.com/ghodss/yaml v1.0.0
 	github.com/gorilla/handlers v1.5.1
 	github.com/gorilla/mux v1.8.0
